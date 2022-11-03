@@ -12,9 +12,7 @@ body{
 .container{
     width: 880px;
     margin: 0 auto;
-    border: 1px solid;
     display: flex;
-    border: 1px solid;
 }
 
 /************************estilização do cabeçalho e menu************************/
@@ -62,8 +60,9 @@ a:link, a:visited {
 .col-1, .col-2, .col-3{
     display: flex;
     flex-direction: column;
-    border: 1px solid;
     margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
     align-items: center;
 }
 
@@ -179,4 +178,33 @@ legend{
     background-color: #b10333;
     color: #ffffff;
     padding: 3px;
+}
+
+
+/*estilizando footer*/
+
+footer{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-top: 1px solid #b10333;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    color: #294c71;
 }
