@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-image: url(/imagens/fundo.png);
+    background-repeat: repeat-x;
+}
+
+.container{
+    width: 880px;
+    margin: 0 auto;
+    border: 1px solid;
+    display: flex;
+    border: 1px solid;
+}
+
+header{
+    width: 880px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+
+nav .navegacao{
+    display: flex;
+    list-style: none;
+    width: 600px;
+}
+
+.navegacao li{
+    background-color: #b10333;
+    padding: 10px;
+    border-left: 1px solid #8a012856;
+    flex: 1;
+    text-align: center;
+}
+
+.navegacao li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:link, a:visited {
+	color: #b10333;
+	padding: 2px;
+}
+
+.navegacao li a:hover {
+	color: #ff0048;
+}
+
+/*estilização da caixa*/
+
+.caixa{
+    width: 280px;
+    background-image: url(/imagens/fundo-caixa.png);
+}
+
+.caixa h2{
+    background-color: #294c71;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.caixa h3{
+    background-color: #b10333;
+    margin-bottom: 10px;
+    color: white;
+    display: inline-block;
+}
+
+/*col 1*/
+
+.col-1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa{
+    margin-top: 50px;
+}
+
+/*caixa de novas tecnologias*/
+.caixa-conteudo a{
+    margin: 0;
+}
+.item-conteudo{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.item-conteudo--desc{
+    margin-left: 20px;
+}
+
+.item-conteudo--desc h3{
+    background-color: white;
+    color: #294c71;
+    font-size: 17px;
+}
+
+.item-conteudo--img img{
+    width: 100px;
+}
+
+/*col-2*/
+
+.col-2{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/*col-3*/
+
+.col-3{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
