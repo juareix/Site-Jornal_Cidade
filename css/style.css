@@ -17,6 +17,8 @@ body{
     border: 1px solid;
 }
 
+/************************estilização do cabeçalho e menu************************/
+
 header{
     width: 880px;
 }
@@ -55,76 +57,80 @@ a:link, a:visited {
 	color: #ff0048;
 }
 
-/*estilização da caixa*/
+/****************estilização das estrututuras padrões*******************8*/
 
+.col-1, .col-2, .col-3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.col-1, .col-2{
+    flex: 2;
+}
+.col-3{
+    flex: 1;
+    order: -1;
+}
+
+/*estilos das caixas principais*/
 .caixa{
-    width: 280px;
-    background-image: url(/imagens/fundo-caixa.png);
+    max-width: 300px;
+    margin-top: 30px;
 }
 
 .caixa h2{
-    background-color: #294c71;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.caixa h3{
     background-color: #b10333;
-    margin-bottom: 10px;
-    color: white;
+    color: #ffffff;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.caixa-conteudo{
+    margin-top: 10px;
+}
+
+.caixa-conteudo h3{
+    margin-bottom: 5px;
+    color: #ffffff;
+    background-color: rgb(42, 31, 128);
     display: inline-block;
+    padding: 3px;
+    font-size: 15px;
 }
 
-/*col 1*/
+.caixa-conteudo img{
+    width: 300px;
+}
 
-.col-1{
-    flex: 2;
+.caixa-conteudo p, .caixa-conteudo a{
+    margin-top: 5px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*******/
+.item-noticia{
     display: flex;
-    flex-direction: column;
+    margin-top: 10px;
 }
 
-.caixa{
-    margin-top: 50px;
-}
-
-/*caixa de novas tecnologias*/
-.caixa-conteudo a{
-    margin: 0;
-}
-.item-conteudo{
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-    padding: 10px 0;
-    background-color: white;
-}
-
-.item-conteudo--desc{
-    margin-left: 20px;
-}
-
-.item-conteudo--desc h3{
-    background-color: white;
-    color: #294c71;
-    font-size: 17px;
-}
-
-.item-conteudo--img img{
+.item-noticia img{
     width: 100px;
 }
 
-/*col-2*/
-
-.col-2{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
+.desc-item{
+    margin-left: 20px;
 }
 
-/*col-3*/
+.desc-item h4{
+    color: #b10333;
+}
 
-.col-3{
-    flex: 2;
-    display: flex;
-    flex-direction: column;
+a.link-item{
+    text-decoration: none;
+    padding: 0;
+    color: black;
 }
