@@ -55,6 +55,10 @@ a:link, a:visited {
 	color: #ff0048;
 }
 
+
+.btn{
+    display: none;
+}
 /****************estilização das estrututuras padrões*******************8*/
 
 .col-1, .col-2, .col-3{
@@ -207,4 +211,61 @@ footer ul li a{
 footer ul li a:hover{
     text-decoration: underline;
     color: #294c71;
+}
+
+
+/**layout para tablets*/
+
+@media (max-width:767px){
+    .menu{
+        margin: 20px;
+    }
+    .container{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        width: 100%;
+    }
+    .display{
+        display: none;
+    }
+    .btn{
+        display: flex;
+        padding-right: 10px;
+    }
+
+    .caixa{
+        width: 100%;
+        margin-top: 30px;
+        background-image: url(../imagens/fundo-caixa.png);
+    }
+
+    .col-1, .col-2, .col-3{
+        margin-top: 10px;
+        padding-bottom: 20px;
+        flex: 1;
+    }
+
+    .col-3{
+        order: 0;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    footer ul{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+
+    span{
+        font-size: 10px;
+        color: gray;
+    }
 }
